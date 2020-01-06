@@ -1,0 +1,30 @@
+<mat-toolbar class="menu" >
+    <mat-toolbar-row class="row_menu">
+        <div class="logo">
+            <a href="#" class="logo_reference">
+                <img src="https://vignette4.wikia.nocookie.net/elbrutomuxxu/images/8/89/Wiki-wordmark.png/revision/latest?cb=20150806003808" alt="">
+            </a>
+        </div>
+        <div class="menu_more">
+            <div class="menu_small">
+                <button mat-icon-button [matMenuTriggerFor]="index">
+                    <mat-icon [ngStyle]="{'color':'#fff'}">menu</mat-icon >
+                </button>
+                <mat-menu #index="matMenu">
+                    <button class="button_hover" mat-menu-item>Home</button>
+                    <button class="button_hover" mat-menu-item>Modify Bruto</button>
+                    <button class="button_hover" mat-menu-item>logout</button>
+                    <button class="button_hover" mat-menu-item>account</button>
+                </mat-menu>
+            </div>
+            <div class="menu_large">
+                <ul class="list_menu">
+                    <li class="list_reference"><a href="#">Home</a></li>
+                    <li class="list_reference"><a href="#">Modify Bruto</a></li>
+                    <li class="list_reference"><a href="#">account</a></li>
+                    <li class="list_reference"><a href="#">logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
