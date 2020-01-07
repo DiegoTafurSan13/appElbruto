@@ -12,7 +12,7 @@
                 </button>
                 <mat-menu #index="matMenu">
                     <button class="button_hover" mat-menu-item>Home</button>
-                    <button class="button_hover" mat-menu-item>Modify Bruto</button>
+                    <button (click)="navigateCharacter()" class="button_hover" mat-menu-item>Modify Bruto</button>
                     <button class="button_hover" mat-menu-item>logout</button>
                     <button class="button_hover" mat-menu-item>account</button>
                 </mat-menu>
@@ -20,7 +20,7 @@
             <div class="menu_large">
                 <ul class="list_menu">
                     <li class="list_reference"><a href="#">Home</a></li>
-                    <li class="list_reference"><a href="#">Modify Bruto</a></li>
+                    <li class="list_reference"><a [routerLink]="['/app/home/confCharacter']">Modify Bruto</a></li>
                     <li class="list_reference"><a href="#">account</a></li>
                     <li class="list_reference"><a href="#">logout</a></li>
                 </ul>

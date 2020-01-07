@@ -1,12 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from "@angular/router";
+import { FormsModule } from "@angular/forms";
 //imports angular material
 import 
 { 
   MatToolbarModule,
   MatButtonModule,
   MatIconModule,
-  MatMenuModule
+  MatMenuModule,
+  MatCardModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatSelectModule,
 } 
 from "@angular/material";
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +22,14 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 
+//configure Firebase
+import { AngularFireModule } from "angularfire2";
+import { AngularFireDatabaseModule } from "angularfire2/database";
+import { environment } from "../environments/environment";
+
+//imports service
+import { ModelService } from "./services/model.service";
+import { ConfcharacterComponent } from './confcharacter/confcharacter.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +37,7 @@ import { HomeComponent } from './home/home.component';
     NavComponent,
     FooterComponent,
     HomeComponent,
+    ConfcharacterComponent,
    
   ],
   imports: [
@@ -33,8 +48,16 @@ import { HomeComponent } from './home/home.component';
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
+    RouterModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [ModelService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
