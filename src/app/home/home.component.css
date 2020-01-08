@@ -1,0 +1,97 @@
+.container{
+    width: 100%;
+    max-width: 1280px;
+
+}
+.container_title{
+    background-image: url('../../assets/utilitarios/title_celda.gif');
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 27px;
+    width: 100%;
+}
+.container_title span{
+    margin: 0 10px 0 40px;
+    font-weight: bold;
+}
+.container_body{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+    justify-content: center;
+}
+.mat_card_bruto{
+    margin: 5px;
+}
+.stats_character{
+    display: flex;
+    flex-flow: row wrap;
+}
+.stats_character_img{
+    width: 100px;
+    height: 175px;
+    margin-right: 10px;
+}
+.stats_physical{
+    line-height: 20px;
+}
+.stats_life{
+    background-image: url('../../assets/utilitarios/vitalidad.gif');
+    background-repeat: no-repeat;
+    background-position: left;
+    
+}
+.stats_strength{
+    background-image: url('../../assets/utilitarios/fuerza.gif');
+    
+    background-repeat: no-repeat;
+    background-position: left;
+   
+}
+.stats_agility{
+    background-image: url('../../assets/utilitarios/agilidad.gif');
+
+    background-repeat: no-repeat;
+    background-position: left;
+    
+}
+.stats_speed{
+    background-image: url('../../assets/utilitarios/velocidad.gif');
+    background-repeat: no-repeat;
+    background-position: left;
+   
+}
+.stats_result{
+    line-height: 20px;
+}
+.stats_victory{
+    background-image: url('../../assets/utilitarios/ganadas.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.stats_wounds{
+    background-image: url('../../assets/utilitarios/heridas.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.stats_title{
+    margin-left: 20px;
+}
+.xp_barra{
+    background-image: url('../../assets/utilitarios/xpbar.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    width: 108px;
+    height: 17px;
+}
+.xp_barra_img{
+
+    width: 49px;
+    height: 7px;
+    margin: 5px;
+}
